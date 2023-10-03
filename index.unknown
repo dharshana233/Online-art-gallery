@@ -1,0 +1,3598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharshana's - Online Art Gallery</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b> Dharshana's Art Gallery</b> to get the latest art works and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="https://sp.yimg.com/ib/th?id=OPA.oveZbyqRUSbJVA474C474&o=5&pid=21.1&w=&h=" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone just bought this beautiful art piece
+      </p>
+
+      <p class="toast-title">
+        Oil Painting
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - Rs.4999
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">INR </option>
+            <option value="eur">USD &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="https://document-export.canva.com/0--oU/DAFvvq0--oU/8/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230928T182748Z&X-Amz-Expires=90030&X-Amz-Signature=331597d57a480da5d43fbd55e7b7216bd684f62e192e9ed4155fdc3cdda638d7&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2029%20Sep%202023%2019%3A28%3A18%20GMT" alt="Dharshana's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="new.html">Art & Prints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Digital Prints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Giclee</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Screen prints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Lincout Prints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Wood Prints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    
+                     
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Fibre arts</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Weaving</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Felting</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Embroidery</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Quilting</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sewing</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                   
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Mixed Media & Collage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Paint</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Canvas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mosaic</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Other Assemblage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Paper</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Dolls and Miniatures</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dioramas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Figurines</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Art Dolls</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dollhouses</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Miniatures</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Painting</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Oil</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Watercolor</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Acrylic</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Glass</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Sculpture</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Figurines</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Art Objects</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Vessels</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Ceramics</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Illustration</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Digital</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Pen and Ink</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Pastel</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Charcoal</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Collectibles</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Memorabilia</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Figurines</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Knick Knacks</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Coins and Money</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Sketching</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">New Arrivals</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Painting</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Oil</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Watercolor</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Acrylic</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Glass</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Sculpture</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Figurines</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Art Objects</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Vessels</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Ceramics</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Illustration</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Digital</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Pen and Ink</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Pastel</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Charcoal</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Collectibles</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Memorabilia</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Figurines</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Knick Knacks</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Coins and Money</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Sketching</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">New Arrivals</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">INR</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="Wake up your walls with fine hand painted artwork." class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending Art Work</p>
+
+              <h2 class="banner-title">Wake up your walls with fine hand painted artwork.</h2>
+
+              <p class="banner-text">
+                starting at & ₹ <b>3999</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-2.jpg" alt="Make it memorable with handpainted gifts." class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Handpainted Gifts</p>
+
+              <h2 class="banner-title">Make it memorable with handpainted gifts.</h2>
+
+              <p class="banner-text">
+                starting at & ₹ <b>1599</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-3.jpg" alt="Drawings that speak" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sale Offer</p>
+
+              <h2 class="banner-title">Drawings that speak.</h2>
+
+              <p class="banner-text">
+                starting at & ₹ <b>2999</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://m.media-amazon.com/images/I/71cvLyowszL._SX522_.jpg" alt="prints" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Prints</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://m.media-amazon.com/images/I/61jnEb162XL._SL1000_.jpg" alt="paintings" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Paintings</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://i.pinimg.com/originals/0f/fb/bd/0ffbbd5e55ee6b863f6cab871de8cf1a.jpg" alt="sketching" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sketching</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.FMnsQFhD73QfczSeLIA9uAHaK1&pid=Api&P=0&h=180" alt="Sculptures" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sculptures</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/717s5s2TQ9L._AC_UL240_SR240,240_.jpg" alt="terracota" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Terracota</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.8Eyt5k0AweXpLfX820e-zQHaHa&pid=Api&P=0&h=180" alt="illustration" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Illustration</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.nM2t4GPJHTpMK1XGvh1fFAHaFj&pid=Api&P=0&h=180" alt="fibre arts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Fibre Arts</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.rI7sBWwvt_cu6qzFvqfHhgHaFN&pid=Api&P=0&h=180" alt="sewing" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sewing</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://m.media-amazon.com/images/I/81PckMzySxL._AC_UL480_FMwebp_QL65_.jpg" alt="painting" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Painting</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Oil painting</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Watercolor Painting</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Acrylic Painting</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Glass painting</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.r1nZnbLT5kxLoBasFGWILgHaHW&pid=Api&P=0&h=180" alt="sculpture" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Sculpture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Figurines</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Art Objects</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Vessels</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ceramics</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://media.boingboing.net/wp-content/uploads/2017/08/maxim-shkret-03.png" alt="illustration" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Illustration</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Digital</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Pen and ink</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Pastel</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/25/461893-illustration-sunset-mountains-Sun-artwork.jpg" alt="Collectibles" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Collectibles</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Memorabilia</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Figurines</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Knick Knack</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Coins and Money</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://i.pinimg.com/originals/aa/a3/53/aaa3531876f536933b2f3f6a94ab7a81.jpg" alt="Mandella" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Mandella</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Western Mandella</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Indian Touch</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Southern punch</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Traditional</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.W3dYUvmbbASgkA5GbRgtWgHaG9&pid=Api&P=0&h=180" alt="Tanjore Painting" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Tanjore Painting</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Scenery</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">portrait</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://blog.tubikstudio.com/wp-content/uploads/2019/12/whale-at-home-illustration.png" alt="Customized Paintings" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Customized Paintings</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Portrait</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Group</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Nature</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Arcitecture</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://m.media-amazon.com/images/I/81PckMzySxL._AC_UL480_FMwebp_QL65_.jpg" alt="Acrylic paintng" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Acrylic Painting</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹ 6990</del>
+                      <p class="price">₹ 4990</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://blog.tubikstudio.com/wp-content/uploads/2019/12/whale-at-home-illustration.png" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Digital Prints</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹ 9000</del>
+                      <p class="price">₹ 900</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.N6AaZarH7eps7cAD2GBpOwHaHa&pid=Api&P=0&h=180" alt="Sculpture" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Sculpture</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹ 100000 </del>
+                      <p class="price">₹ 9999</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7hu6WCX3O8-TVi44rNnONgHaHb&pid=Api&P=0&h=180" alt="Knitting" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">knitting</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹ 9000</del>
+                      <p class="price">₹ 5999</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/81PckMzySxL._AC_UL480_FMwebp_QL65_.jpg" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Oil Painting</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Painting</a>
+
+                      <div class="price-box">
+                        <p class="price">₹45.00</p>
+                        <del>₹12.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/61S6qWaDroL._SX300_SY300_QL70_FMwebp_.jpg" alt="painting" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Glass painting</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Painting</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₹61.00</p>
+                        <del>₹90.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.fyd-wAUeXAy6N2kiOj4cOAHaF-&pid=Api&P=0&h=180" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Acrylic painting</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Painting</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₹76.00</p>
+                        <del>₹25.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://i.pinimg.com/originals/87/01/62/8701629c0100d7ed46e4e4a752f85938.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Wood Painting</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Painting</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₹68.00</p>
+                        <del>₹31.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+               <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse1.mm.bing.net/th?id=OIP.ek5vbMKPA1KoOT7EqopvagAAAA&pid=Api&P=0&h=180" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Fibre arts</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Weaving</a>
+                
+                      <div class="price-box">
+                        <p class="price">₹61.00</p>
+                        <del>₹11.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse1.mm.bing.net/th?id=OIP.jWBm4c73NHZt-4zMmG3YnAHaHa&pid=Api&P=0&h=180" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Screen prints</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Digital prints</a>
+                
+                      <div class="price-box">
+                        <p class="price">₹32.00</p>
+                        <del>₹20.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse4.mm.bing.net/th?id=OIP.2X7hM6NL5dxXmKXQb5MzYgHaKI&pid=Api&P=0&h=180" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Lincout prints</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Digital print</a>
+                
+                      <div class="price-box">
+                        <p class="price">₹50.00</p>
+                        <del>₹25.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse4.mm.bing.net/th?id=OIP.mG9Fwac29Bm8WAoMWxekvgHaFh&pid=Api&P=0&h=180" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Pastel</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Illustration</a>
+                
+                      <div class="price-box">
+                        <p class="price">₹20.00</p>
+                        <del>₹10.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.JmDn5HR2ZkT0AwD7_QD4xQHaFL&pid=Api&P=0&h=180" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Charcoal</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Illustration</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹49.00</p>
+                        <del>₹15.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse1.mm.bing.net/th?id=OIP.zX8Kqvtvpvlu49ex8XqNOwHaEr&pid=Api&P=0&h=180" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Figurines</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Collectibles</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹78.00</p>
+                        <del>₹36.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.grBc79UoLPvs3mRgKS9E5wHaHa&pid=Api&P=0&h=180" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Acrylic painting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category"></a>
+            
+                      <div class="price-box">Painting
+                        <p class="price">₹94.00</p>
+                        <del>₹42.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse1.mm.bing.net/th?id=OIP.A66Vv29f6fZZp-1yMZDLPgHaEK&pid=Api&P=0&h=180" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Customized group painting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">painting</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹54.00</p>
+                        <del>₹65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://i.pinimg.com/originals/fb/be/1a/fbbe1af14f874efa4b1228030c7ac3bd.jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Portrait sketch</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sketch</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹52.00</p>
+                        <del>₹55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://i.pinimg.com/originals/e3/b4/d8/e3b4d8d6ea60d0a022e77ffad6a9d07c.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Knitting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">art and collectibles</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹20.00</p>
+                        <del>₹30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.wherebuyart.com/images/xin3/il_1588xN.1852892440_229t.jpg" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Abstract painting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">painting</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹56.00</p>
+                        <del>₹78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse4.mm.bing.net/th?id=OIP.Xb-YP6TRGWxqbXuH-Ly-dQHaFj&pid=Api&P=0&h=180" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Felting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Fibre arts</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹50.00</p>
+                        <del>₹55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://i.pinimg.com/originals/c2/52/fd/c252fd7881747a115275077e1c077894.png" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Charcoal portrait drawing</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sketching</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹50.00</p>
+                        <del>₹34.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse4.mm.bing.net/th?id=OIP.kNDnAhVNSiD0uUBuNoFKyAHaHa&pid=Api&P=0&h=180" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Wood Print</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Digital prints</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹84.00</p>
+                        <del>₹30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://cdn.shopify.com/s/files/1/1993/6065/products/GF078-close_up.jpg?v=1550873999" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mosaic</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mixed media and collage</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹42.00</p>
+                        <del>₹10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse2.mm.bing.net/th?id=OIP.Zp-MD1ELSTo4gkApyAZ9yAHaFj&pid=Api&P=0&h=180" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Art dolls</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Dolls and miniature</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹24.00</p>
+                        <del>₹10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.pMRItmg-qoRFK9DDaoQn3QHaHa&pid=Api&P=0&h=180" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Canvas</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mixed media and collage</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹62.00</p>
+                        <del>₹65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://tse1.mm.bing.net/th?id=OIP.F54-n1xkA2dFKO7fd4x1zgHaGP&pid=Api&P=0&h=180" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Oil painting</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Painting</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹56.00</p>
+                        <del>₹78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="http://alhone.com/wp-content/uploads/2018/06/Weathering-the-storm-819x1024.jpg" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+                       <a href="#">
+                        <h4 class="showcase-title">Vessels</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sculpture</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹20.00</p>
+                        <del>₹30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="http://www.drawingskill.com/wp-content/uploads/3/Pen-And-Ink-Art-Drawing.jpg" alt="rose gold peacock earrings" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Pen and ink</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Illustration</a>
+            
+                      <div class="price-box">
+                        <p class="price">₹20.00</p>
+                        <del>₹30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+        -->
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="https://m.media-amazon.com/images/I/81PckMzySxL._AC_UL480_FMwebp_QL65_.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Terracota painting</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Terracota has been the medium for art since the Harappan civilization.
+                      Bring the Harappan civilization feel  at your home.
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹150.00</p>
+
+                      <del>₹200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">0</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://m.media-amazon.com/images/I/51b6tJ4NzBL._SX300_SY300_QL70_FMwebp_.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+                  
+                  
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Mandala art</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                     Its all about finding peace in the symmetry of the universe.
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">₹1990.00</p>
+                      <del>₹2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">0</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="https://m.media-amazon.com/images/I/71bch+W0s0L._SX522_.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="https://m.media-amazon.com/images/I/718VqYNLbbL._SX522_.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Painting</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mandala art</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹48.00</p>
+                    <del>₹89.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/41PsVxG86zL._SX569_.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/41YoIhNHPfL._SX569_.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">Painting</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline">Terracota Painting</ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Collectibles</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Ceramics</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹45,0000.00</p>
+                    <del>₹56.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/71KaLj45+kL._SX522_.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/717urj4fmdL._SX522_.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Customized painting</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Group customized painting</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹58.00</p>
+                    <del>₹65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/91T9smEhYWL._SX569_.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/91kZJOuQjoL._SX569_.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mandala</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Southern Mandala Art</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹25.00</p>
+                    <del>₹35.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/81afcm0RobL._SX522_.jpg" alt="Casual Men's Brown shoes" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/917S2L--IwL._SL1500_.jpg" alt="Casual Men's Brown shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Sculpture</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Terracota</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹99.00</p>
+                    <del>₹105.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/71Mxs-n4cHL._SX522_.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/71g7QxIMtUL._SX522_.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Dolls and miniatures</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Terracota doll</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹150.00</p>
+                    <del>₹170.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/619BxiISb+L._UX679_.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/61uHnI52xDL._UX522_.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Fibre arts</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Crochet</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹100.00</p>
+                    <del>₹120.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/71-qU1T0NoL._SX522_.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/71xNjSlH6IL._SX522_.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Illustraion</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Digital art</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹25.00</p>
+                    <del>₹30.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/51Yfy8vpXFL._SL1500_.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/710aOYivEbL._SL1500_.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Figuirne</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Fibre Art</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹32.00</p>
+                    <del>₹45.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/61V3K31X-3L._SX569_.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/51T4E7AYqwL._SX569_.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Painting</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Abstract Painting</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹58.00</p>
+                    <del>₹64.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/61QqpNoZxxL._SX522_.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/61An+Uj9QoL._SX522_.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Painting</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Customized painting</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹50.00</p>
+                    <del>₹65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/61jnEb162XL._SX569_.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="https://m.media-amazon.com/images/I/51ki4+VDNcL._SL1000_.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Painting</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"> Wall Painting</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹78.00</p>
+                    <del>₹85.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="https://pps.whatsapp.net/v/t61.24694-24/364240762_797371711878831_4294395086455720342_n.jpg?ccb=11-4&oh=01_AdShQZe8xdLEp16P5YZBETWQAp68RV-WTYygpPaY3-4_Hw&oe=6521EC92&_nc_sid=000000&_nc_cat=105" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Dharshana</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                LIFE IS ART, PAINT YOUR DREAMS
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="https://m.media-amazon.com/images/I/51l7vjEIt7S._AC_UL480_FMwebp_QL65_.jpg" class="cta-banner">
+
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Art collection</h2>
+
+              <p class="cta-text">Starting @ ₹10</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">For Order Over ₹100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">Orders within Indian Only</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over ₹100</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="https://sp.yimg.com/ib/th?id=OPA.q97wmeCNBjF%2fUQ474C474&o=5&pid=21.1&w=&h=" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Digital Prints</a>
+
+              <a href="#">
+                <h3 class="blog-title">Amazing Digital Prits: At Dharshana's Art Gallery.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Leslin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://sp.yimg.com/ib/th?id=OPA.6sORohUoq5bKQw474C474&o=5&pid=21.1&w=&h=" alt="Make your house into heaven."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Fibre Art</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Make your house into heaven</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Ms Sudherlin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://sp.yimg.com/ib/th?id=OPA.tEsQNk4cgxtEjg474C474&o=5&pid=21.1&w=&h=" alt="Best art gallery: Where to find the best art gallery."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Wall Art</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Best art gallery: Where to find the best art gallery</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Ms Libi</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://sp.yimg.com/ib/th?id=OPA.TnkZWot%2fiq6VBQ474C474&o=5&pid=21.1&w=&h=" alt="Best Artworks Ever Found: How to find amazing artworks."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Painting</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Best Artworks Ever Found: How to find amazing artworks.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Ms. Diana</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Art and Prints :</h3>
+
+          <a href="#" class="footer-category-link">Digital Prints</a>
+          <a href="#" class="footer-category-link">Giclee</a>
+          <a href="#" class="footer-category-link">Screen Prints</a>
+         <!-- <a href="#" class="footer-category-link">jacket</a>
+          <a href="#" class="footer-category-link">dress & frock</a>
+          <a href="#" class="footer-category-link">innerwear</a>
+          <a href="#" class="footer-category-link">hosiery</a>
+         -->
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Fibre arts :</h3>
+        
+          <a href="#" class="footer-category-link">Weaving</a>
+          <a href="#" class="footer-category-link">Felting</a>
+          <a href="#" class="footer-category-link">Embroidery</a>
+          <a href="#" class="footer-category-link">Quilting</a>
+         <!-- <a href="#" class="footer-category-link">cowboy shoes</a>
+          <a href="#" class="footer-category-link">safety shoes</a>
+          <a href="#" class="footer-category-link">Party wear shoes</a>
+          <a href="#" class="footer-category-link">Branded</a>
+          <a href="#" class="footer-category-link">Firstcopy</a>
+          <a href="#" class="footer-category-link">Long shoes</a>
+         -->
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Mixed Media and Collage :</h3>
+        
+          <a href="#" class="footer-category-link">Paint</a>
+          <a href="#" class="footer-category-link">Canvas</a>
+          <a href="#" class="footer-category-link">Mosaic</a>
+          <a href="#" class="footer-category-link">Paper</a>
+         <!-- <a href="#" class="footer-category-link">Crystal</a>
+          <a href="#" class="footer-category-link">Bangles</a>
+          <a href="#" class="footer-category-link">bracelets</a>
+          <a href="#" class="footer-category-link">nosepin</a>
+          <a href="#" class="footer-category-link">chain</a>
+          <a href="#" class="footer-category-link">Earrings</a>
+          <a href="#" class="footer-category-link">Couple rings</a>
+         -->
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Dolls and Miniatures :</h3>
+        
+          <a href="#" class="footer-category-link">Art Dolls</a>
+          <a href="#" class="footer-category-link">Dioramas</a>
+          <a href="#" class="footer-category-link">Dollhouses</a>
+          <a href="#" class="footer-category-link">Miniatures</a>
+          <a href="#" class="footer-category-link">Figurines</a>
+         <!--<a href="#" class="footer-category-link">prefume</a>
+          <a href="#" class="footer-category-link">Body soap</a>
+          <a href="#" class="footer-category-link">scrub</a>
+          <a href="#" class="footer-category-link">hair gel</a>
+          <a href="#" class="footer-category-link">hair colors</a>
+          <a href="#" class="footer-category-link">hair dye</a>
+          <a href="#" class="footer-category-link">sunscreen</a>
+          <a href="#" class="footer-category-link">skin loson</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>--> 
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Painting</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sculpture</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Digital Prints</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Customized Painting</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Illustration</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+             Jai Balaji Nagar, Second Main Road, Kodungaiyur, Madhavaram, Chennai 600 051.
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:7871797267" class="footer-nav-link">7871797267</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:dharshana7279@gmail.com" class="footer-nav-link">dharshana7279@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Dharshana</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
